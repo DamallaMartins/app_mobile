@@ -1,3 +1,4 @@
+import 'package:app_mobile/participante.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -122,7 +123,7 @@ class SegundaTela extends StatelessWidget {
     String evento = '';
 
 
-    List<Registro> listaRegistro = [];
+    List<Participante> listaRegistro = [];
     final formKey = GlobalKey<FormState>();
 
     return MaterialApp(
@@ -242,7 +243,7 @@ class SegundaTela extends StatelessWidget {
                           formKey.currentState!.save();
 
                           listaRegistro.add(
-                            Registro(
+                            Participante(
                               nome: nome,
                               email: email,
                               telefone: telefone,
